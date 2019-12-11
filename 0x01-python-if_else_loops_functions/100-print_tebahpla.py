@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-for letra in range(122, 96, -1):
-    print(('{:c}'.format(letra) if i % 2 == 0 else "{:c}".format(i - 32)), end="")
+for letra in reversed(range(97, 123)):
+    if letra % 2 != 0:
+        letra = letra - 32
+    print('{}'.format(chr(letra)), end='')
