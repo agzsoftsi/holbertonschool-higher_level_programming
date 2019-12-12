@@ -7,7 +7,7 @@ numarg = len(argv) - 1
 if len(argv) == 2:
     print('{} argument:'.format(numarg))
 else:
-    print('{} argument:'.format(numarg))
+    print('{} arguments:'.format(numarg))
 
 con = 0
 for n in argv:
