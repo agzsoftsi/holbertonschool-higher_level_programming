@@ -79,6 +79,7 @@ Write a function that prints the first x elements of a list and only integers.
 - You are not allowed to import any module
 - You are not allowed to use len()
 
+### TEST
 ```
 guillaume@ubuntu:~/0x05$ ./2-main.py
 12
@@ -196,7 +197,7 @@ Write a function that prints an integer.
 - You have to use "{:d}".format() to print as integer
 - You are not allowed to use type()
 
-
+### TEST
 ```
 guillaume@ubuntu:~/0x05$ ./100-main.py
 89
@@ -220,6 +221,7 @@ Write a function that executes a function safely.
 - Otherwise, returns None if something happens during the function and prints in stderr the error precede by Exception:
 - You have to use try: / except:
 
+### TEST
 ```
 guillaume@ubuntu:~/0x05$ ./101-main.py 2> /dev/null
 result of my_div: 5.0
