@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""Define a square with position coordinates."""
+
+
 class Square:
-    """Class Square is created"""
+    """Class Square is created."""
 
     def __init__(self, size=0, position=(0, 0)):
         """Initializes with a size"""
@@ -9,12 +12,12 @@ class Square:
 
     @property
     def size(self):
-        """method to return size value"""
+        """method to return size value."""
         return self.__size
 
     @size.setter
     def size(self, value):
-        """method to set a size value"""
+        """method to set a size value."""
         if type(value) != int:
             raise TypeError('size must be an integer')
         if value < 0:
@@ -31,7 +34,9 @@ class Square:
         if self.__size == 0:
             print()
         else:
+            print('\n' * self.__position[1], end='')
             for num in range(0, self.__size):
+                print(' ' * self.__position[0], end='')
                 print('#' * self.__size)
                 """loop to print the square"""
     @property

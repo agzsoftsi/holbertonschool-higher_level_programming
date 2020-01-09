@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Define a method to print a square with #"""
+
+
 class Square:
     """Class Square is created"""
 

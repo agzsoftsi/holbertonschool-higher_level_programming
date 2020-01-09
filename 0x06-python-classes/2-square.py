@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Define and validate a size for square."""
+
+
 class Square:
     """Class Square is created"""
 

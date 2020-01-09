@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Define a method names area to find the square."""
+
+
 class Square:
     """Class Square is created"""
 

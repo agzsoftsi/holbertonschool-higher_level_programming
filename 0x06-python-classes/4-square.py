@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Define a getter and setter for a size."""
+
+
 class Square:
     """Class Square is created"""
 
