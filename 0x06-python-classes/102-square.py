@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Define a square with position coordinates."""
+"""Define a square with stantard operations"""
 
 
 class Square:
@@ -11,27 +11,27 @@ class Square:
         self.position = position
 
     def __eq__(self, other):
-        """Standard operators as functions two squares are equal."""
+        """operators as functions two squares are equal."""
         return self.__size == other.__size
 
     def __ne__(self, other):
-        """Standard operators as functions two squares are not equal."""
+        """operators as functions two squares are not equal."""
         return self.__size != other.__size
 
     def __lt__(self, other):
-        """Standard operators as functions square 1 is less than square 2."""
+        """operators as functions square 1 is less than square 2."""
         return self.__size < other.__size
 
     def __le__(self, other):
-        """Standard operators as functions square 1 is less than or equal to square 2."""
+        """functions square 1 is less than or equal to square 2."""
         return self.__size <= other.__size
 
     def __gt__(self, other):
-        """Standard operators as functions square 1 is greater than square 2."""
+        """operators as functions square 1 is greater than square 2."""
         return self.__size > other.__size
 
     def __ge__(self, other):
-        """Standard operators as functions square 1 is greater than or equal to square 2."""
+        """functions square 1 is greater than or equal to square 2."""
         return self.__size >= other.__size
 
     @property
@@ -52,4 +52,3 @@ class Square:
     def area(self):
         """Return the area of the square"""
         return self.__size**2
-
