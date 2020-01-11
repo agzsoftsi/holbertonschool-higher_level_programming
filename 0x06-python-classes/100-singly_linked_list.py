@@ -68,4 +68,3 @@ class SinglyLinkedList:
         new_node.next_node = current.next_node
         current.next_node = new_node
         return
-

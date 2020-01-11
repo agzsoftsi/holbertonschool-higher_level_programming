@@ -21,6 +21,7 @@ class Square:
                 string += (' ' * self.__position[0])
                 string += ('#' * self.__size + '\n')
         return string[:-1]
+
     @property
     def size(self):
         """method to return size value."""
