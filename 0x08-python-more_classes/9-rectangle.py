@@ -16,7 +16,7 @@ class Rectangle():
     def __str__(self):
         """To Print the rectangle."""
         string = ''
-        if self.__height == 0 or self.__width == 0:
+        if self.__width == 0 or self.__height == 0:
             return string
         string += ((str(self.print_symbol) * self.__width + '\n') *
                    self.__height)
@@ -84,4 +84,4 @@ class Rectangle():
     @classmethod
     def square(cls, size=0):
         """To create a square-type object."""
-        return Rectangle(size, size)
+        return cls(size, size)
