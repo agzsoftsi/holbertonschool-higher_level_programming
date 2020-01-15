@@ -13,6 +13,11 @@ class Rectangle():
         self.width = width
         Rectangle.number_of_instances += 1
 
+    def __del__(self):
+        """To Delete Rectangle."""
+        print('Bye rectangle...')
+        Rectangle.number_of_instances -= 1
+
     def __str__(self):
         """To Print the rectangle."""
         string = ''
@@ -26,11 +31,6 @@ class Rectangle():
         """To return a String of Rectangle Representation."""
         return "{}({}, {})".format(type(self).__name__,
                                    self.width, self.height)
-
-    def __del__(self):
-        """To Delete Rectangle."""
-        print('Bye rectangle...')
-        Rectangle.number_of_instances -= 1
 
     @property
     def width(self):
