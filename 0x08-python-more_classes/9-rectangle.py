@@ -19,7 +19,7 @@ class Rectangle():
         Rectangle.number_of_instances -= 1
 
     def __str__(self):
-        """To Print the rectangle."""
+        """Print the rectangle."""
         string = ''
         if self.__width == 0 or self.__height == 0:
             return string
