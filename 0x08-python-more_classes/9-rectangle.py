@@ -18,8 +18,8 @@ class Rectangle():
         string = ''
         if self.__height == 0 or self.__width == 0:
             return string
-        string = string + ((str(self.print_symbol) * self.__width + '\n') *
-                           self.__height)
+        string += ((str(self.print_symbol) * self.__width + '\n') *
+                   self.__height)
         return string[:-1]
 
     def __repr__(self):
