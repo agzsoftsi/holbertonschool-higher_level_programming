@@ -24,6 +24,12 @@ class Rectangle(Base):
         print('\n' * self.__y + (' ' * self.__x + '#' * self.__width + '\n') *
               self.__height, end='')
 
+    def __str__(self):
+        """Print the rectangle. - Task 6"""
+        return "[{}] ({}) {}/{} - {}/{}".format(type(self).__name__, self.id,
+                                                self.x, self.y, self.width,
+                                                self.height)
+
     @property
     def width(self):
         """Getter for width. - Task 3"""
