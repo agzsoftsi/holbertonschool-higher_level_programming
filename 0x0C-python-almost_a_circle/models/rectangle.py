@@ -31,7 +31,7 @@ class Rectangle(Base):
                                                 self.height)
 
     def update(self, *args, **kwargs):
-        """Update the rectangle: id, width, height, x, y - Task 8."""
+        """Update the rectangle: id, width, height, x, y - Task 8 - Task 9."""
         if args:
             if len(args) >= 1:
                 self.id = args[0]
