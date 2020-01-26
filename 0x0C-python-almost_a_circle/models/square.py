@@ -13,6 +13,16 @@ class Square(Rectangle):
 
     def __str__(self):
         """Print the square attributes. - Task 10"""
-        return ('[Square] (' + str(self.id) + ') ' + str(self._Rectangle__x) +
-                '/' + str(self._Rectangle__y) + ' - ' +
-                str(self._Rectangle__width))
+        return "[{}] ({}) {}/{} - {}".format(type(self).__name__, self.id,
+                                             self.x, self.y, self.width)
+
+    @property
+    def size(self):
+        """Getter for size."""
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """Setter for size - based off width and height."""
+        self.width = value
+        self.height = value
