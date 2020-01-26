@@ -19,6 +19,11 @@ class Rectangle(Base):
         """Return the area of the rectangle - Task4."""
         return self.__width * self.__height
 
+    def display(self):
+        """Return a picture of the object. - Task5"""
+        print('\n' * self.__y + (' ' * self.__x + '#' * self.__width + '\n') *
+              self.__height, end='')
+
     @property
     def width(self):
         """Getter for width. - Task 3"""
