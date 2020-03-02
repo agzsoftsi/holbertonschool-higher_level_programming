@@ -86,7 +86,7 @@ $
 # Tasks
 
 0. List databases mandatory
-File: 0-list_databases.sql
+File: [0-list_databases.sql](0-list_databases.sql/)
 
 Write a script that lists all databases of your MySQL server.
 ```
@@ -100,7 +100,7 @@ guillaume@ubuntu:~/$
 ```
 
 1. Create a database mandatory
-File: 1-create_database_if_missing.sql
+File: [1-create_database_if_missing.sql](1-create_database_if_missing.sql/)
 Write a script that creates the database hbtn_0c_0 in your MySQL server.
 
 - If the database hbtn_0c_0 already exists, your script should not fail
@@ -123,7 +123,7 @@ guillaume@ubuntu:~/$
 
 
 2. Delete a database mandatory
-File: 2-remove_database.sql
+File: [2-remove_database.sql](2-remove_database.sql/)
 Write a script that deletes the database hbtn_0c_0 in your MySQL server.
 
 - If the database hbtn_0c_0 doesn’t exist, your script should not fail
@@ -150,7 +150,7 @@ guillaume@ubuntu:~/$
 
 
 3. List tables mandatory
-File: 3-list_tables.sql
+File: [3-list_tables.sql](3-list_tables.sql/)
 Write a script that lists all the tables of a database in your MySQL server.
 
 The database name will be passed as argument of mysql command (in the following example: mysql is the name of the database)
@@ -188,7 +188,7 @@ guillaume@ubuntu:~/$
 
 
 4. First table mandatory
-File: 4-first_table.sql
+File: [4-first_table.sql](4-first_table.sql/)
 Write a script that creates a table called first_table in the current database in your MySQL server.
 
 - first_table description:
@@ -209,7 +209,7 @@ guillaume@ubuntu:~/$
 
 
 5. Full description mandatory
-File: 5-full_table.sql
+File: [5-full_table.sql](5-full_table.sql/)
 
 Write a script that prints the full description of the table first_table from the database hbtn_0c_0 in your MySQL server.
 
@@ -225,7 +225,7 @@ guillaume@ubuntu:~/$
 
 
 6. List all in table mandatory
-File: 6-list_values.sql
+File: [6-list_values.sql](6-list_values.sql/)
 
 Write a script that lists all rows of the table first_table from the database hbtn_0c_0 in your MySQL server.
 
@@ -239,7 +239,7 @@ guillaume@ubuntu:~/$
 
 
 7. First add mandatory
-File: 7-insert_value.sql
+File: [7-insert_value.sql](7-insert_value.sql/)
 Write a script that inserts a new row in the table first_table (database hbtn_0c_0) in your MySQL server.
 
 - New row:
@@ -268,7 +268,7 @@ guillaume@ubuntu:~/$
 ```
 
 8. Count 89 mandatory
-File: 8-count_89.sql
+File: [8-count_89.sql](8-count_89.sql/)
 Write a script that displays the number of records with id = 89 in the table first_table of the database hbtn_0c_0 in your MySQL server.
 
 - The database name will be passed as an argument of the mysql command
@@ -282,7 +282,7 @@ guillaume@ubuntu:~/$
 
 
 9. Full creation mandatory
-File: 9-full_creation.sql
+File: [9-full_creation.sql](9-full_creation.sql/)
 Write a script that creates a table second_table in the database hbtn_0c_0 in your MySQL server and add multiples rows.
 
 - second_table description:
@@ -305,7 +305,7 @@ guillaume@ubuntu:~/$
 
 
 10. List by best mandatory
-File: 10-top_score.sql
+File: [10-top_score.sql](10-top_score.sql/)
 Write a script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.
 
 - Results should display both the score and the name (in this order)
@@ -325,7 +325,7 @@ guillaume@ubuntu:~/$
 
 
 11. Select the best mandatory
-File: 11-best_score.sql
+File: [11-best_score.sql](11-best_score.sql/)
 Write a script that lists all records with a score >= 10 in the table second_table of the database hbtn_0c_0 in your MySQL server.
 
 - Results should display both the score and the name (in this order)
@@ -342,7 +342,7 @@ guillaume@ubuntu:~/$
 ```
 
 12. Cheating is bad mandatory
-File: 12-no_cheating.sql
+File: [12-no_cheating.sql](12-no_cheating.sql/)
 Write a script that updates the score of Bob to 10 in the table second_table.
 
 - You are not allowed to use Bob’s id value, only the name field
@@ -362,7 +362,7 @@ guillaume@ubuntu:~/$
 
 
 13. Score too low mandatory
-File: 13-change_class.sql
+File: [13-change_class.sql](13-change_class.sql/)
 Write a script that removes all records with a score <= 5 in the table second_table of the database hbtn_0c_0 in your MySQL server.
 
 - The database name will be passed as an argument of the mysql command
@@ -381,7 +381,7 @@ guillaume@ubuntu:~/$
 
 
 14. Average mandatory
-File: 14-average.sql
+File: [14-average.sql](14-average.sql/)
 Write a script that computes the score average of all records in the table second_table of the database hbtn_0c_0 in your MySQL server.
 
 - The result column name should be average
@@ -396,7 +396,7 @@ guillaume@ubuntu:~/$
 ```
 
 15. Number by score mandatory
-File: 15-groups.sql
+File: [15-groups.sql](15-groups.sql/)
 Write a script that lists the number of records with the same score in the table second_table of the database hbtn_0c_0 in your MySQL server.
 
 The result should display:
@@ -415,7 +415,7 @@ guillaume@ubuntu:~/$
 ```
 
 16. Say my name mandatory
-File: 16-no_link.sql
+File: [16-no_link.sql](16-no_link.sql/)
 Write a script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.
 
 - Don’t list rows without a name value
@@ -437,7 +437,7 @@ guillaume@ubuntu:~/$
 
 
 17. Go to UTF8 #advanced
-File: 100-move_to_utf8.sql
+File: [100-move_to_utf8.sql](100-move_to_utf8.sql/)
 Write a script that converts hbtn_0c_0 database to UTF8 (utf8mb4, collate utf8mb4_unicode_ci) in your MySQL server.
 
 You need to convert all of the following to UTF8:
@@ -458,7 +458,7 @@ guillaume@ubuntu:~/$
 
 
 18. Temperatures #0 #advanced
-File: 101-avg_temperatures.sql
+File: [101-avg_temperatures.sql](101-avg_temperatures.sql/)
 Import in hbtn_0c_0 database this table dump: download
 
 Write a script that displays the average temperature (Fahrenheit) by city ordered by temperature (descending).
@@ -490,7 +490,7 @@ guillaume@ubuntu:~/$
 
 
 19. Temperatures #1 #advanced
-File: 102-top_city.sql
+File: [102-top_city.sql](102-top_city.sql/)
 Import in hbtn_0c_0 database this table dump: download (same as Temperatures #0)
 
 Write a script that displays the top 3 of cities temperature during July and August ordered by temperature (descending)
@@ -506,7 +506,7 @@ guillaume@ubuntu:~/$
 
 
 20. Temperatures #2 #advanced
-File: 103-max_state.sql
+File: [103-max_state.sql](103-max_state.sql/)
 Import in hbtn_0c_0 database this table dump: download (same as Temperatures #0)
 
 Write a script that displays the max temperature of each state (ordered by State name).
