@@ -6,7 +6,7 @@ A high-level language is a programming language designed to simplify computer pr
 
 ![](https://www.bookbird.co.uk/files/PageImages/FlowDiagram2.png)
 
-![](https://miro.medium.com/max/10000/1*HLGtY6O2vUHqIyEbWdmBgA.jpeg)
+
 
 # Content
 
