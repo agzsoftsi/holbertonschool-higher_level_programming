@@ -258,3 +258,96 @@ guillaume@ubuntu:~/0x0F$ ./4-cities_by_state.py root root hbtn_0e_4_usa
 (15, 'Carson City', 'Nevada')
 guillaume@ubuntu:~/0x0F$
 ```
+
+
+
+5. All cities by state mandatory - [5-filter_cities.py](5-filter_cities.py/)
+
+Write a script that takes in the name of a state as an argument and lists all cities of that state, using the database hbtn_0e_4_usa
+
+- Your script should take 4 arguments: mysql username, mysql password, database name and state name (SQL injection free!)
+- You must use the module MySQLdb (import MySQLdb)
+- Your script should connect to a MySQL server running on localhost at port 3306
+- Results must be sorted in ascending order by cities.id
+- You can use only execute() once
+- The results must be displayed as they are in the example below
+- Your code should not be executed when imported
+
+```
+guillaume@ubuntu:~/0x0F$ cat 4-cities_by_state.sql
+-- Create states table in hbtn_0e_4_usa with some data
+CREATE DATABASE IF NOT EXISTS hbtn_0e_4_usa;
+USE hbtn_0e_4_usa;
+CREATE TABLE IF NOT EXISTS states ( 
+    id INT NOT NULL AUTO_INCREMENT, 
+    name VARCHAR(256) NOT NULL,
+    PRIMARY KEY (id)
+);
+INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York"), ("Nevada");
+
+CREATE TABLE IF NOT EXISTS cities ( 
+    id INT NOT NULL AUTO_INCREMENT, 
+    state_id INT NOT NULL,
+    name VARCHAR(256) NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY(state_id) REFERENCES states(id)
+);
+INSERT INTO cities (state_id, name) VALUES (1, "San Francisco"), (1, "San Jose"), (1, "Los Angeles"), (1, "Fremont"), (1, "Livermore");
+INSERT INTO cities (state_id, name) VALUES (2, "Page"), (2, "Phoenix");
+INSERT INTO cities (state_id, name) VALUES (3, "Dallas"), (3, "Houston"), (3, "Austin");
+INSERT INTO cities (state_id, name) VALUES (4, "New York");
+INSERT INTO cities (state_id, name) VALUES (5, "Las Vegas"), (5, "Reno"), (5, "Henderson"), (5, "Carson City");
+
+guillaume@ubuntu:~/0x0F$ cat 4-cities_by_state.sql | mysql -uroot -p
+Enter password: 
+guillaume@ubuntu:~/0x0F$ ./5-filter_cities.py root root hbtn_0e_4_usa Texas
+Dallas, Houston, Austin
+guillaume@ubuntu:~/0x0F$ 
+```
+
+
+6. First state model - [model_state.py](model_state.py/) - [model_state.py](model_state.py/)
+
+Write a python file that contains the class definition of a State and an instance Base = declarative_base():
+
+State class:
+- inherits from Base Tips
+- links to the MySQL table states
+- class attribute id that represents a column of an auto-generated, unique integer, can’t be null and is a primary key
+- class attribute name that represents a column of a string with maximum 128 characters and can’t be null
+- You must use the module SQLAlchemy
+- Your script should connect to a MySQL server running on localhost at port 3306
+- WARNING: all classes who inherit from Base must be imported before calling Base.metadata.create_all(engine)
+
+```
+guillaume@ubuntu:~/0x0F$ cat 6-model_state.sql
+-- Create database hbtn_0e_6_usa
+CREATE DATABASE IF NOT EXISTS hbtn_0e_6_usa;
+USE hbtn_0e_6_usa;
+SHOW CREATE TABLE states;
+
+guillaume@ubuntu:~/0x0F$ cat 6-model_state.sql | mysql -uroot -p
+Enter password: 
+ERROR 1146 (42S02) at line 4: Table 'hbtn_0e_6_usa.states' doesn't exist
+guillaume@ubuntu:~/0x0F$ cat 6-model_state.py
+#!/usr/bin/python3
+"""Start link class to table in database 
+"""
+import sys
+from model_state import Base, State
+
+from sqlalchemy import (create_engine)
+
+if __name__ == "__main__":
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
+    Base.metadata.create_all(engine)
+
+guillaume@ubuntu:~/0x0F$ ./6-model_state.py root root hbtn_0e_6_usa
+guillaume@ubuntu:~/0x0F$ cat 6-model_state.sql | mysql -uroot -p
+Enter password: 
+Table   Create Table
+states  CREATE TABLE `states` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `name` varchar(128) NOT NULL,\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=latin1
+guillaume@ubuntu:~/0x0F$ 
+```
+
+
