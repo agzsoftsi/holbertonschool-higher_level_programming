@@ -11,7 +11,7 @@
 - All your files should end with a new line
 - The first line of all your files should be exactly #!/usr/bin/python3
 - A README.md file, at the root of the folder of the project, is mandatory
-- Your code should use the PEP 8 style (version 1.7.*)
+- Your code should use the PEP 8 style (version 1.7.)
 - All your files must be executable
 - The length of your files will be tested using wc
 - All your modules should have a documentation (python3 -c 'print(__import__("my_module").__doc__)')
@@ -423,5 +423,23 @@ guillaume@ubuntu:~/0x0F$ ./9-model_state_filter_a.py root root hbtn_0e_6_usa
 guillaume@ubuntu:~/0x0F$ 
 ```
 
+10. Get a state mandatory [10-model_state_my_get.py](10-model_state_my_get.py/)
 
+Write a script that prints the State object with the name passed as argument from the database hbtn_0e_6_usa
 
+- Your script should take 4 arguments: mysql username, mysql password, database name and state name to search (SQL injection free)
+- You must use the module SQLAlchemy
+- You must import State and Base from model_state - from model_state import Base, State
+- Your script should connect to a MySQL server running on localhost at port 3306
+- You can assume you have one record with the state name to search
+- Results must display the states.id
+- If no state has the name you searched for, display Not found
+- Your code should not be executed when imported
+
+```
+guillaume@ubuntu:~/0x0F$ ./10-model_state_my_get.py root root hbtn_0e_6_usa Texas
+3
+guillaume@ubuntu:~/0x0F$ ./10-model_state_my_get.py root root hbtn_0e_6_usa Illinois
+Not found
+guillaume@ubuntu:~/0x0F$ 
+```
