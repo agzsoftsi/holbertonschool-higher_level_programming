@@ -400,3 +400,28 @@ guillaume@ubuntu:~/0x0F$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
 1: California
 guillaume@ubuntu:~/0x0F$ 
 ```
+
+
+9. Contains `a` mandatory - [9-model_state_filter_a.py](9-model_state_filter_a.py/)
+
+Write a script that lists all State objects that contain the letter a from the database hbtn_0e_6_usa
+
+- Your script should take 3 arguments: mysql username, mysql password and database name
+- You must use the module SQLAlchemy
+- You must import State and Base from model_state - from model_state import Base, State
+- Your script should connect to a MySQL server running on localhost at port 3306
+- Results must be sorted in ascending order by states.id
+- The results must be displayed as they are in the example below
+- Your code should not be executed when imported
+
+```
+guillaume@ubuntu:~/0x0F$ ./9-model_state_filter_a.py root root hbtn_0e_6_usa
+1: California
+2: Arizona
+3: Texas
+5: Nevada
+guillaume@ubuntu:~/0x0F$ 
+```
+
+
+
