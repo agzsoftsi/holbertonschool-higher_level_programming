@@ -6,6 +6,7 @@ managing HTTPError exceptions
 
 if __name__ == '__main__':
     import urllib.request
+    import urllib.error
     from sys import argv
 
     reqst = urllib.request.Request(argv[1])
