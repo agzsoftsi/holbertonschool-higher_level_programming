@@ -8,8 +8,8 @@ request(url, function (error, response, body) {
   let con = 0;
   for (const film of JSON.parse(body).results) {
     for (const character of film.characters) {
-      if (character.includes('/18/')) {
-	/* Wedge Antilles is character ID 18 */
+      if (character.endsWith('/18/')) {
+        /* Wedge Antilles is character ID 18 */
         con++;
       }
     }
