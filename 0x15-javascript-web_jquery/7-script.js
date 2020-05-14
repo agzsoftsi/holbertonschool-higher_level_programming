@@ -2,6 +2,6 @@
 You must use the jQuery API
 Use getJSON to call the API for starwars
 */
-$.getJSON('https://swapi.co/api/people/5/?format=json', function (query) {
+$.getJSON('https://swapi-api.hbtn.io/api/people/5/?format=json', function (query) {
   $('#character').text(query.name);
 });
