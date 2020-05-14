@@ -1,4 +1,4 @@
-# 0x15. Javascript - Web JQuery
+﻿# 0x15. Javascript - Web JQuery
 
 ## Requirements
 
@@ -23,10 +23,13 @@
 </head>
 ```
 
+Test the Repository On Browser: https://gifted-traveling-trip.glitch.me/
 
 # TASKS
 
 0. No jQuery mandatory - [0-script.js](0-script.js/)
+
+-Test the Task On Browser: https://gifted-traveling-trip.glitch.me/0-main.html
 
 Write a Javascript script that updates the text color of the HTML tag HEADER to red (#FF0000):
 
@@ -56,6 +59,8 @@ guillaume@ubuntu:~/0x15$
 
 
 1. With jQuery mandatory - [1-script.js](1-script.js/)
+
+-Test the Task On Browser: https://gifted-traveling-trip.glitch.me/1-main.html
 
 Write a Javascript script that updates the text color of the HTML tag HEADER to red (#FF0000):
 
@@ -87,6 +92,8 @@ guillaume@ubuntu:~/0x15$
 
 2. Click and turn red mandatory - [2-script.js](2-script.js/)
 
+-Test the Task On Browser: https://gifted-traveling-trip.glitch.me/2-main.html
+
 Write a Javascript script that updates the text color of the HTML tag HEADER to red (#FF0000) when the user clicks on the tag DIV#red_header:
 
 - You can’t use document.querySelector to select the HTML tag
@@ -117,6 +124,8 @@ guillaume@ubuntu:~/0x15$
 
 
 3. Add `.red` class mandatory - [3-script.js](3-script.js/)
+
+-Test the Task On Browser: https://gifted-traveling-trip.glitch.me/3-main.html
 
 Write a Javascript script that adds the class red to the HTML tag HEADER to red (#FF0000) when the user clicks on the tag DIV#red_header:
 
@@ -152,6 +161,8 @@ guillaume@ubuntu:~/0x15$
 ```
 
 4. Toggle classes mandatory - [4-script.js](4-script.js/)
+
+-Test the Task On Browser: https://gifted-traveling-trip.glitch.me/4main.html
 
 Write a Javascript script that toggles the class of the HTML tag HEADER to red (#FF0000) when the user clicks on the tag DIV#toggle_header:
 
@@ -194,6 +205,8 @@ guillaume@ubuntu:~/0x15$
 
 5. List of elements mandatory - [5-script.js](5-script.js/)
 
+-Test the Task On Browser: https://gifted-traveling-trip.glitch.me/5-main.html
+
 Write a Javascript script that adds a LI element to a list when the user clicks on the tag DIV#add_item:
 
 - The new element must be: <li>Item</li>
@@ -232,6 +245,8 @@ guillaume@ubuntu:~/0x15$
 
 6. Change the text mandatory - [6-script.js](6-script.js/)
 
+-Test the Task On Browser: https://gifted-traveling-trip.glitch.me/6-main.html
+
 Write a Javascript script that updates the text of the HTML tag HEADER to "New Header!!!" when the user clicks on DIV#update_header
 
 - You can’t use document.querySelector to select the HTML tag
@@ -263,6 +278,8 @@ guillaume@ubuntu:~/0x15$
 ```
 
 7. Star wars character mandatory - [7-script.js](7-script.js/)
+
+-Test the Task On Browser: https://gifted-traveling-trip.glitch.me/7-main.html
 
 Write a Javascript script that fetches and replaces the name of this URL: https://swapi-api.hbtn.io/api/people/5/?format=json
 
@@ -298,6 +315,8 @@ guillaume@ubuntu:~/0x15$
 
 8. Star Wars movies mandatory - [8-script.js](8-script.js/)
 
+-Test the Task On Browser: https://gifted-traveling-trip.glitch.me/8-main.html
+
 Write a Javascript script that fetches and lists all movies title by using this URL: https://swapi-api.hbtn.io/api/films/?format=json
 
 - All movie titles must be list in the HTML tag UL#list_movies
@@ -332,6 +351,8 @@ guillaume@ubuntu:~/0x15$
 
 
 9. Say Hello! mandatory - [9-script.js](9-script.js/)
+
+-Test the Task On Browser: https://gifted-traveling-trip.glitch.me/9-main.html
 
 Write a Javascript script that fetches from https://fourtonfish.com/hellosalut/?lang=fr and displays the value of hello from that fetch in the HTML’s tag DIV#hello.
 
