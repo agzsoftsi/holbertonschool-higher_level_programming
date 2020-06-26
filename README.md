@@ -1,14 +1,16 @@
-# Higher Level Programming
+![](Top.png)
 
-![](logo.jpg)
+## :orange_book: Introduction
 
 A high-level language is a programming language designed to simplify computer programming. It is "high-level" since it is several steps removed from the actual code run on a computer's processor. High-level source code contains easy-to-read syntax that is later converted into a low-level language, which can be recognized and run by a specific CPU.
 
 ![](https://www.bookbird.co.uk/files/PageImages/FlowDiagram2.png)
 
+## :blue_book: Languages
 
 
-# Content
+
+## :books: Content
 
 - [0x00-python-hello_world](0x00-python-hello_world/)
 - [0x01-python-if_else_loops_functions](0x01-python-if_else_loops_functions/)
@@ -24,3 +26,27 @@ A high-level language is a programming language designed to simplify computer pr
 - [0x0B-python-input_output](0x0B-python-input_output/)
 - [0x0C-python-almost_a_circle](0x0C-python-almost_a_circle/)
 - [0x0D-SQL_introduction](0x0D-SQL_introduction/)
+- [0x0E-SQL_more_queries](0x0E-SQL_more_queries/)
+- [0x0F-python-object_relational_mapping](0x0F-python-object_relational_mapping/)
+- [0x10-python-network_0](0x10-python-network_0/)
+- [0x11-python-network_1](0x11-python-network_1/)
+- [0x12-javascript-warm_up](0x12-javascript-warm_up/)
+- [0x13-javascript_objects_scopes_closures](0x13-javascript_objects_scopes_closures/)
+- [0x14-javascript-web_scraping](0x14-javascript-web_scraping/)
+- [0x15-javascript-web_jquery](0x15-javascript-web_jquery/)
+
+
+## :sagittarius: Author
+
+> :man: Carlos Andres Garcia Morales
+
+> :e-mail: [E-mail](agzsoftsi@gmail.com)
+
+> :octocat: [Github](https://github.com/agzsoftsi)
+
+> :bird: [Twiiter](https://twitter.com/karlgarmor)
+
+> :blue_book: [Linkedin](https://twitter.com/karlgarmor)
+
+> :globe_with_meridians: [WebPage](https://www.agzsoftsi.tech/)
+
